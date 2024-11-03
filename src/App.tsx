@@ -2,13 +2,11 @@ import WebCam from "./components/WebCam";
 import DocsChat from "./components/DocsChat";
 
 const App = () => {
-  const h = import.meta.env.VITE_API_URL;
-  console.log({ h });
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column", gap: "50px" }}>
       <WebCam />
       <DocsChat />
-    </>
+    </div>
   );
 };
 
